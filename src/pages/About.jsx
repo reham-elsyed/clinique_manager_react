@@ -9,7 +9,7 @@ function About() {
         <figure className='bg-slate-500 h-full'>
     <img
     className=" pt-3 self-end"
-      src={assets.about_image}
+      src={`https://firebasestorage.googleapis.com/v0/b/authproject-fbe08.appspot.com/o/files%2Fabout_image.png?alt=media&token=88987b4d-9997-4a94-b653-ab3565b8c88d`}
       alt="about us" />
   </figure>
         </div>
