@@ -1,5 +1,4 @@
 import React from 'react'
-import { assets } from '../assets/assets/assets_frontend/assets'
 
 function Header() {
   return (
@@ -16,7 +15,7 @@ function Header() {
         simply browse through our group of doctors<br className='hidden md:block'/>schedual your appointment
         </p>
         </div>
-        <a href="#speciality" className="btn border-cyan-500 bg-cyan-800 text-white">Book appointment <img className="w-5 " src={assets.arrow_icon} alt="book appointment" />
+        <a href="#speciality" className="btn border-cyan-500 bg-cyan-800 text-white">Book appointment 
         </a>
       </div>
     </div>

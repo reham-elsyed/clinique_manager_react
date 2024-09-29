@@ -1,5 +1,4 @@
 import React from 'react'
-import { assets } from '../assets/assets/assets_frontend/assets'
 import {Link} from 'react-router-dom'
 function Contact() {
   return (
@@ -10,7 +9,7 @@ function Contact() {
     <figure className=' h-full'>
 <img
 className=" pt-3 self-end"
-  src={assets.contact_image}
+  src={`https://firebasestorage.googleapis.com/v0/b/authproject-fbe08.appspot.com/o/files%2Fcontact_image.png?alt=media&token=1dfffa84-ce38-466b-a12d-18c0b88b4d8b`}
   alt="contact" />
 </figure>
     </div>

@@ -1,7 +1,6 @@
 import React, { useEffect , useState, useContext, useMemo} from 'react'
 import { AppContext } from '../../context/AppContext'
 import { useParams, useNavigate } from 'react-router-dom'
-import { assets } from '../assets/assets/assets_frontend/assets'
 import RelatedDoctors from '../components/RelatedDoctors'
 import { AuthContext } from '../../context/AuthContext'
 import { AppointmentContext } from '../../context/AppointmentContext'
@@ -131,7 +130,7 @@ const fetchDoctor = async ()=>{
   <div className="card-body m-2 border-1 border-gray-500 md:w-2/3 shadow-xl">
    <div className='flex'>
    <h2 className="card-title">{docdata?.name}</h2>
-   <img className="h-3 w-3" src={assets.verified_icon} alt="verified" />
+   <img className="h-3 w-3" src={`https://firebasestorage.googleapis.com/v0/b/authproject-fbe08.appspot.com/o/files%2Fverified_icon.svg?alt=media&token=9db092ec-79c6-47f3-8d74-49dd7e257911`} alt="verified" />
    </div>
     <div>
     <p>{docdata?.speciality}</p>

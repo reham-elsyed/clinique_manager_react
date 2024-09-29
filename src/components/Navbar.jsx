@@ -1,5 +1,4 @@
 import  { useContext, useState } from 'react'
-import {assets} from '../assets/assets/assets_frontend/assets'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../context/AuthContext'
 import { CreateUserDatabaseContext } from "../../context/UserDbContext";
@@ -64,7 +63,7 @@ function Navbar() {
         </NavLink>
         </ul>
       </div>
-      <img className='w-44 cursor-pointer' src={assets.logo} alt="logo"/>
+      <img className='w-44 cursor-pointer' src={`https://firebasestorage.googleapis.com/v0/b/authproject-fbe08.appspot.com/o/files%2Flogo.svg?alt=media&token=22d9dbc2-8c2e-46e1-b237-092f5afe15ed`} alt="logo"/>
      
     </div>
     <div className="navbar-center hidden lg:flex">
@@ -94,7 +93,7 @@ function Navbar() {
         <div className="w-10 rounded-full">
           <img
             alt="Profile pic"
-            src={assets.profile_pic} />
+            src={`https://firebasestorage.googleapis.com/v0/b/authproject-fbe08.appspot.com/o/files%2Fprofile_pic.png?alt=media&token=806de08d-eb9c-4eb9-8150-2b87b2c93b42`} />
         </div>
         </div>
    

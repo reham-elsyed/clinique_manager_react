@@ -11,7 +11,7 @@ import useScrollToTop from '../components/ScrollTopHook';
     <div>
         <footer className="footer  bg-base-200 text-base-content p-10">
   <aside>
-   <img src={assets.logo} alt="logo" />
+   <img src={`https://firebasestorage.googleapis.com/v0/b/authproject-fbe08.appspot.com/o/files%2Flogo.svg?alt=media&token=22d9dbc2-8c2e-46e1-b237-092f5afe15ed`} alt="logo" />
     <p>
       ACME Industries Ltd.
       <br />
