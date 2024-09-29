@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes ,Navigate} from 'react-router-dom'
 import Home from './pages/Home'
 import Doctors from './pages/Doctors'
 import Login from './pages/Login'
@@ -25,6 +25,7 @@ const App = () => {
   <QueryClientProvider client={queryClient}>
 <Routes>
   <Route path='/'  element={<Home />}/>
+  <Route index element={<Navigate to="/" replace />} />
   <Route path='/doctors/:speciality?'  element={<Doctors />}/>
   <Route path='login'  element={<Login />}/>
   <Route path='/about'  element={<About />}/>
@@ -38,6 +39,7 @@ const App = () => {
   <Route path='/my-appointment'  element={<MyAppointment/>}/>
   <Route path='/appointment/:doctorId'  element={<Appointment />}/>
   <Route path='signup'  element={<Signup />}/>
+  <Route path="*" element={<Navigate to="/" replace />} />
 </Routes>
 </QueryClientProvider>
 <Footer/>
