@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 //import {doctors} from '../assets/assets/assets_frontend/assets'
 import { useNavigate } from 'react-router-dom'
-import { AppContext } from '../../context/AppContext'
 import { DoctorDatabaseContext } from '../../context/DoctorDatabaseContext'
 import { useQuery } from '@tanstack/react-query'
 
@@ -15,7 +14,7 @@ function TopDoctors() {
    }
     const navigate = useNavigate()
     
-    const {doctors} = useContext(AppContext)
+
 
   return (
     <div className="py-5 md:py-20">

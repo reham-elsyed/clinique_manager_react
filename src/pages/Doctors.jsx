@@ -2,20 +2,19 @@ import React, { useContext, useEffect, useState } from 'react'
 import {useNavigate, useParams} from'react-router-dom'
 import { specialityData } from '../assets/assets/assets_frontend/assets'
 import { useQuery } from '@tanstack/react-query'
-import { AppContext } from '../../context/AppContext'
 import { DoctorDatabaseContext } from '../../context/DoctorDatabaseContext'
 import { CreateUserDatabaseContext } from '../../context/UserDbContext'
 import {AvailableSlotsContext} from '../../context/AvailableSlotsContext'
 function Doctors() {
   const {speciality}= useParams()
   const navigate = useNavigate()
-  const {doctors} = useContext(AppContext)
+
   const {userRole, deleteUser} = useContext(CreateUserDatabaseContext)
   const [dataDisplay, setDataDisplay] = useState([])
   const {getDoctorsData} = useContext(DoctorDatabaseContext)
 const {deleteAvailableSlots} =useContext(AvailableSlotsContext)
   const {error, data, isLoading} = useQuery({queryKey:["doctorAll"],queryFn:helperGetDoctorsData })
-  console.log(doctors)
+
 async function helperGetDoctorsData(){
 return await getDoctorsData()
 

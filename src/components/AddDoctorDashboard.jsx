@@ -5,7 +5,7 @@ import { AvailableSlotsContext } from '../../context/AvailableSlotsContext'
 import { imagestorage } from '../../firebase'
 import {ref, uploadBytes, getDownloadURL} from'firebase/storage'
 import { v4 } from 'uuid'
-import {alldoctors} from '../assets/assets/assets_frontend/assets'
+//import {alldoctors} from '../assets/assets/assets_frontend/assets'
 function AddDoctorDashboard() {
   const [img, setImg] =useState()
     const {addDoctorAndCreateAccount}= useContext(DoctorDatabaseContext)
