@@ -1,4 +1,4 @@
-import { createRoot } from 'react-dom/client'
+import React from 'react'
 import App from './App.jsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
@@ -9,7 +9,7 @@ import DoctorDatabaseContextProvider from '../context/DoctorDatabaseContext.jsx'
 import AppointmentContextProvider from '../context/AppointmentContext.jsx'
 import AvailableSlotsContextProvider from '../context/AvailableSlotsContext.jsx'
 
-createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
 
     <AppContextProvider>
       <AuthContextProvider>

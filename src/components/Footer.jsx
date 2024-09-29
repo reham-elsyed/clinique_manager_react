@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { assets } from '../assets/assets/assets_frontend/assets'
 import useScrollToTop from '../components/ScrollTopHook';
 
 
