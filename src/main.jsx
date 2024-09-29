@@ -11,7 +11,7 @@ import AppointmentContextProvider from '../context/AppointmentContext.jsx'
 import AvailableSlotsContextProvider from '../context/AvailableSlotsContext.jsx'
 
 createRoot(document.getElementById('root')).render(
- <StrictMode>
+
     <AppContextProvider>
       <AuthContextProvider>
         <DoctorDatabaseContextProvider>
@@ -19,7 +19,9 @@ createRoot(document.getElementById('root')).render(
             <CreateUserDatabaseContextProvider>
               <AvailableSlotsContextProvider>
               <BrowserRouter>
+              <React.StrictMode>
                 <App />
+                </React.StrictMode>
               </BrowserRouter>
               </AvailableSlotsContextProvider>
             </CreateUserDatabaseContextProvider>
@@ -27,5 +29,5 @@ createRoot(document.getElementById('root')).render(
         </DoctorDatabaseContextProvider>
       </AuthContextProvider>
     </AppContextProvider>
-    </StrictMode>
+    
 )
